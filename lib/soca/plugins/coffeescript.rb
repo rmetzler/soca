@@ -22,19 +22,31 @@ module Soca
           :config => pusher.config
         }.merge(options[:vars] || {})
         Soca.logger.debug "CoffeeScript vars: #{vars.inspect}"
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> quirkey
         files.each do |file|
           Soca.logger.debug "Running #{file} through CoffeeScript."
           basename = File.basename(file)
           dir      = File.dirname(file)
           parts    = basename.split(/\./)
           new_file = (parts.length > 2 ? parts[0..-2].join('.') : parts[0]) + ".js"
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> quirkey
           File.open(File.join(dir, new_file), 'w') do |f|
             f << ::CoffeeScript.compile(File.read(file), vars)
           end
           Soca.logger.debug "Wrote to #{new_file}"
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> quirkey
         end
       end
 

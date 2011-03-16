@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * this file contains the json representation for rewrite rules 
+=======
+ * this file contains the json representation for rewrite rules
+>>>>>>> quirkey
 **/
 [
   { // rewriting / to index.html
@@ -12,4 +16,8 @@
     "from":"/*",
     "to":"/*"
   }
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> quirkey
