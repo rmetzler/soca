@@ -1,5 +1,7 @@
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'soca'
+require 'bundler'
+Bundler.require
 
 begin
   require 'jeweler'
@@ -13,12 +15,12 @@ begin
     gem.authors = ["Aaron Quint"]
     gem.add_dependency 'json', '~>1.4.6'
     gem.add_dependency 'mime-types', '~>1.16'
-    gem.add_dependency 'typhoeus', '~>0.1.31'
+    gem.add_dependency 'typhoeus', '~>0.2'
     gem.add_dependency 'thor', '~>0.14.0'
-    gem.add_dependency 'jim', '~>0.2.3'
+    gem.add_dependency 'jim', '~>0.3.1'
     gem.add_dependency 'compass', '~>0.10.5'
     gem.add_dependency 'mustache', '~>0.11.2'
-    gem.add_dependency 'coffee-script', '~> 1.1.0'
+    gem.add_dependency 'coffee-script', '~> 2.1.2'
     gem.add_development_dependency "shoulda", ">= 0"
     gem.add_development_dependency "yard", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
